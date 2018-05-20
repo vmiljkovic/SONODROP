@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">SonoDrop</string>
+
+    <string name="action_about">Über</string>
+    <string name="action_device_history">Gerätehistorie</string>
+    <string name="action_load">Laden</string>
+    <string name="action_save">Speichern</string>
+    <string name="activity_device_list">Verbundene Geräte</string>
+    <string name="program">Programm</string>
+    <string name="bt_not_enabled_leaving">Bluetooth ist nicht aktiv. Anwendung verlassen.</string>
+
+    <string-array name="programs">
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+    </string-array>
+
+    <string name="fanlabel">Lüfter</string>
+    <string name="aerosollabel">Aerosol</string>
+    <string name="heaterlabel">Heizung</string>
+    <string name="title_activity_about">Über</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="abouttext">MPV MEDICAL konzentriert sich seit über 15 Jahren auf alle Themen und Produkte rund um den komplexen Bereich Respiratory Care.\n
+                            Wernher-von-Braun-Straße 1\n
+                            Putzbrunn 85640\n
+                            www.mpvmedical.com</string>
+    <string name="newfilename">Dateinamen eingeben!</string>
+    <string name="loadfiletitle">Datei Auswahl</string>
+    <string name="savebtn">Speichern</string>
+    <string name="cancelbtn">Abbrechen</string>
+    <string name="durationmessage">Eingabe der Inhalationsdauer von 10 bis 99 Minuten!</string>
+    <string name="connection_failed">Keine Verbindung zum Gerät</string>
+    <string name="connection_lost">Verbindung zum Gerät unterbrochen</string>
+    <string name="new_file_created">Neue Parameter erstellt</string>
+    <string name="device_history_error">Abrufen der Gerätehistorie fehlgeschlagen</string>
+    <string name="full_time">Dauer (Min.)</string>
+    <string name="current_time_text">"Verbleiben "</string>
+    <string name="error_code">"Fehler Code: "</string>
+    <string name="error_code_1">. Tür geöffnet!</string>
+    <string name="error_code_2">. Mahlwerk überlasted!</string>
+    <string name="error_code_3">. Dosierer überlasted!</string>
+    <string name="error_code_4">. Mahlwerk-Sicherung defekt!</string>
+    <string name="error_code_5">. Vorratsbehälter-Sicherung defekt!</string>
+    <string name="error_code_21">. Nicht genügend wasser!</string>
+    <string name="error_code_22">. Deckel wurde entfernt!</string>
+    <string name="error_code_24">. Gerät überhitzt!</string>
+    <string name="status_text">"Status: "</string>
+    <string name="status_stop">ANGEHALTEN</string>
+    <string name="status_play">IN BETRIEB</string>
+    <string name="status_delay">START VERZÖGERT</string>
+    <string name="status_pause">PAUSE</string>
+    <string name="finished_sessions">Sitzung beendet</string>
+    <string name="errors_session">Fehler</string>
+    <string name="memory_error">Fehler im Memory Speicher!</string>
+    <string name="total_working_time">Gesamtlaufzeit: %d Minuten</string>
+    <string name="prizma_rights">MPV MEDICAL GmbH</string>
+    <string name="connected">Verbunden</string>
+    <string name="not_connected">Nicht Verbunden</string>
+    <string name="connecting">Verbindung…</string>
+    <string name="connected_to">"Verbunden mit "</string>
+    <string name="alias">Neuen Gerätenamen eingeben</string>
+    <string name="alias_title">Umbenennen</string>
+    <string name="local_mode">" - Lokaler Kontroll Modus"</string>
+</resources>

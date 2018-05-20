@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">SonoDrop</string>
+
+    <string name="action_about">O nama</string>
+    <string name="action_device_history">Istorija uređaja</string>
+    <string name="action_load">Učitaj</string>
+    <string name="action_save">Sačuvaj</string>
+    <string name="activity_device_list">Upareni uređaji</string>
+    <string name="program">Program</string>
+    <string name="bt_not_enabled_leaving">Bluetooth nije uključen. Aplikacija se isključuje.</string>
+
+    <string-array name="programs">
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+    </string-array>
+
+    <string name="fanlabel">Ventilator</string>
+    <string name="aerosollabel">Aerosol</string>
+    <string name="heaterlabel">Grejač</string>
+    <string name="title_activity_about">O nama</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="abouttext">Više od 15 godina, MPV MEDICAL je fokusiran na sve teme i proizvode iz kompleksne oblasti respiratorne nege.\n
+                            Wernher-von-Braun-Straße 1\n
+                            Putzbrunn 85640\n
+                            www.mpvmedical.com</string>
+    <string name="newfilename">Unesi ime datoteke!</string>
+    <string name="loadfiletitle">Izaberi datoteku koja se učitava</string>
+    <string name="savebtn">Sačuvaj</string>
+    <string name="cancelbtn">Otkaži</string>
+    <string name="durationmessage">Unesite vreme trajanja između 10 i 99 minuta!</string>
+    <string name="connection_failed">Trenutno ne postoji mogućnost povezivanja sa uređajem</string>
+    <string name="connection_lost">Veza sa uređajem je prekinuta</string>
+    <string name="new_file_created">Novi skup radnih parametara je sačuvan</string>
+    <string name="device_history_error">Neuspešno čitanje istorije rada uređaja</string>
+    <string name="full_time">Ukupno trajanje (min)</string>
+    <string name="current_time_text">"Preostalo "</string>
+    <string name="error_code">"Kod greške: "</string>
+    <string name="error_code_1">. Vrata otvorena!</string>
+    <string name="error_code_2">. Preopterećen mlin!</string>
+    <string name="error_code_3">. Preopterećen dozator!</string>
+    <string name="error_code_4">. Pregoreo osigurač mlina!</string>
+    <string name="error_code_5">. Pregoreo osigurač dozatora!</string>
+    <string name="error_code_21">. Nema vode u rezervoaru!</string>
+    <string name="error_code_22">. Skinut poklopac posude za lek!</string>
+    <string name="error_code_24">. Uređaj je pregrejan!</string>
+    <string name="status_text">"Status: "</string>
+    <string name="status_stop">ZAUSTAVLJEN</string>
+    <string name="status_play">POKRENUT</string>
+    <string name="status_delay">ODLOŽEN START</string>
+    <string name="status_pause">PAUZIRAN</string>
+    <string name="finished_sessions">Pokrenute sesije</string>
+    <string name="errors_session">Greške</string>
+    <string name="memory_error">Greška u memoriji!</string>
+    <string name="total_working_time">Ukupno radno vreme uređaja: %d minuta</string>
+    <string name="prizma_rights">MPV MEDICAL GmbH</string>
+    <string name="connected">Povezan</string>
+    <string name="not_connected">Nije povezan</string>
+    <string name="connecting">Povezivanje…</string>
+    <string name="connected_to">"Povezan sa "</string>
+    <string name="alias">Unesi novo ime uređaja</string>
+    <string name="alias_title">Promeni</string>
+    <string name="local_mode">" - Lokalni mod kontrole"</string>
+</resources>

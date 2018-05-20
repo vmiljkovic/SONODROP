@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">SonoDrop</string>
+
+    <string name="action_about">About</string>
+    <string name="action_device_history">Device History </string>
+    <string name="action_load">Load</string>
+    <string name="action_save">Save</string>
+    <string name="activity_device_list">Paired devices</string>
+    <string name="program">Program</string>
+    <string name="bt_not_enabled_leaving">Bluetooth is not enabled. Leaving application.</string>
+
+    <string-array name="programs">
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+    </string-array>
+
+    <string name="fanlabel">Fan</string>
+    <string name="aerosollabel">Aerosol</string>
+    <string name="heaterlabel">Heater</string>
+    <string name="title_activity_about">About</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="abouttext">For more than 15 years, MPV MEDICAL has focused on all topics and products related to the complex field of respiratory care.\n
+                            Wernher-von-Braun-Straße 1\n
+                            Putzbrunn 85640\n
+                            www.mpvmedical.com</string>
+    <string name="newfilename">Enter file name here!</string>
+    <string name="loadfiletitle">Select file to load</string>
+    <string name="savebtn">Save</string>
+    <string name="cancelbtn">Cancel</string>
+    <string name="durationmessage">Enter duration time between 10 and 99 minutes!</string>
+    <string name="connection_failed">Unable to connect device</string>
+    <string name="connection_lost">Device connection was lost</string>
+    <string name="new_file_created">New working settings file created</string>
+    <string name="device_history_error">Failed to get device history</string>
+    <string name="full_time">Duration (min)</string>
+    <string name="current_time_text">"Remaining "</string>
+    <string name="error_code">"Error code: "</string>
+    <string name="error_code_1">. Door opened!</string>
+    <string name="error_code_2">. Overloaded grinder!</string>
+    <string name="error_code_3">. Overloaded doser!</string>
+    <string name="error_code_4">. Grinder fuse blown!</string>
+    <string name="error_code_5">. Dispenser fuse blown!</string>
+    <string name="error_code_21">. Not enough water!</string>
+    <string name="error_code_22">. Cap is removed!</string>
+    <string name="error_code_24">. Device overheated!</string>
+    <string name="status_text">"Status: "</string>
+    <string name="status_stop">STOPPED</string>
+    <string name="status_play">RUNNING</string>
+    <string name="status_delay">DELAYED START</string>
+    <string name="status_pause">PAUSED</string>
+    <string name="finished_sessions">Finished sessions</string>
+    <string name="errors_session">Errors</string>
+    <string name="memory_error">Error in memory bank!</string>
+    <string name="total_working_time">Total working time: %d minutes</string>
+    <string name="prizma_rights">MPV MEDICAL GmbH</string>
+    <string name="connected">Connected</string>
+    <string name="not_connected">Not connected</string>
+    <string name="connecting">Connecting…</string>
+    <string name="connected_to">"Connected to "</string>
+    <string name="alias">Enter new device name</string>
+    <string name="alias_title">Rename</string>
+    <string name="local_mode">" - Local control mode"</string>
+</resources>

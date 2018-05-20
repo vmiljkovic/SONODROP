@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_device_history"
+    tools:context=".DeviceHistoryActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sessions"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_gravity="left"
+            android:text="@string/finished_sessions"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:id="@+id/finished"
+            android:orientation="horizontal"
+            android:gravity="top">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar5count"
+                    android:gravity="center"
+                    android:layout_height="fill_parent"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_width="wrap_content"/>
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar5"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar5text"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="5"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar10count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar10"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar10text"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar15count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar15"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar15text"
+                    android:gravity="center"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:textSize="14dp"
+                    android:text="15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar20count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar20"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar20text"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar25count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar25"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar25text"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:text="25" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar30count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar30"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar30text"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar35count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar35"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar35text"
+                    android:gravity="center"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:textSize="14dp"
+                    android:text="35" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar40count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar40"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar40text"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar45count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar45"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar45text"
+                    android:gravity="center"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:textSize="14dp"
+                    android:text="45" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar50count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar50"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar50text"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar55count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar55"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar55text"
+                    android:gravity="center"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:textSize="14dp"
+                    android:text="55" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar60count"
+                    android:gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar60"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar60text"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar65count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar65"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar65text"
+                    android:gravity="center"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:textSize="14dp"
+                    android:text="65" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar70count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar70"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar70text"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar75count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar75"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar75text"
+                    android:gravity="center"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:textSize="14dp"
+                    android:text="75" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar80count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar80"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar80text"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar85count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar85"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar85text"
+                    android:gravity="center"
+                    android:text="85"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar90count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar90"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar90text"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar95count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar95"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar95text"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="95"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBar100count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content"/>
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:progress="100"
+                    android:id="@+id/progressBar100"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBar100text"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/errorsTop"
+        android:layout_toRightOf="@id/sessions"
+        android:layout_marginLeft="50dp"
+        android:orientation="vertical"
+        android:baselineAligned="false"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_gravity="left"
+            android:text="@string/errors_session"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/errors"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:gravity="top">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBarE1count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:secondaryProgress="100"
+                    android:id="@+id/progressBarE1"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBarE1text"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBarE2count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:secondaryProgress="100"
+                    android:id="@+id/progressBarE2"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBarE2text"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBarE3count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:secondaryProgress="100"
+                    android:id="@+id/progressBarE3"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBarE3text"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBarE4count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:secondaryProgress="100"
+                    android:id="@+id/progressBarE4"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBarE4text"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBarE5count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:secondaryProgress="100"
+                    android:id="@+id/progressBarE5"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBarE5text"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBarE6count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:secondaryProgress="100"
+                    android:id="@+id/progressBarE6"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBarE6text"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBarE7count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:secondaryProgress="100"
+                    android:id="@+id/progressBarE7"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBarE7text"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBarE8count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:secondaryProgress="100"
+                    android:id="@+id/progressBarE8"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBarE8text"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBarE9count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:secondaryProgress="100"
+                    android:id="@+id/progressBarE9"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBarE9text"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/progressBarE10count"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:minWidth="24dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content" />
+
+                <com.mpvmedical.sonodrop.VerticalProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="300dp"
+                    android:secondaryProgress="100"
+                    android:id="@+id/progressBarE10"
+                    android:progressDrawable="@drawable/red_slider_progress" />
+
+                <TextView android:id="@+id/progressBarE10text"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textSize="14dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@id/sessions"
+        android:id="@+id/device_history_info" />
+
+</RelativeLayout>

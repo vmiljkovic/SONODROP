@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main_sonic"
+    tools:context=".MainActivitySonic">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doserLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/gridLayout"
+        android:useDefaultMargins="false">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="400dp"
+            android:layout_height="8dp"
+            android:id="@+id/progressBar"
+            android:progressDrawable="@drawable/blue_slider_progress"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/estimatedTime"
+            android:layout_row="1"
+            android:layout_column="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/fullTimeText"
+            android:text="@string/full_time"
+            android:gravity="end"
+            android:layout_row="1"
+            android:layout_column="2"/>
+
+        <com.mpvmedical.sonodrop.CustomEditText
+            android:id="@+id/fullTime"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/edittext"
+            android:drawableLeft="@drawable/time"
+            android:textColor="@color/colorPrimary"
+            android:cursorVisible="false"
+            android:imeOptions="actionDone"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:inputType="time"
+            android:layout_row="1"
+            android:layout_column="3"/>
+    </GridLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/doserLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageFan"
+                android:background="@drawable/profisonic_fan" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/fantextid"
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <SeekBar
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:minHeight="50dp"
+                android:maxHeight="50dp"
+                android:id="@+id/fan"
+                android:max="7"
+                android:progressDrawable="@drawable/blue_slider_progress"
+                android:thumb="@drawable/blue_slider_control"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/fantextid"
+                android:layout_toStartOf="@+id/fantextid" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<Spinner-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:id="@+id/program" />-->
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageProgram"
+                android:background="@drawable/profisonic_aerosol_large" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/aerosoltextid"
+                android:layout_width="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <SeekBar
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:minHeight="50dp"
+                android:maxHeight="50dp"
+                android:id="@+id/aerosol"
+                android:max="7"
+                android:progressDrawable="@drawable/blue_slider_progress"
+                android:thumb="@drawable/blue_slider_control"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/aerosoltextid"
+                android:layout_toStartOf="@+id/aerosoltextid" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/heaterLayout"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageHeater" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/heatertextid"
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <SeekBar
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:minHeight="50dp"
+                android:maxHeight="50dp"
+                android:id="@+id/heater"
+                android:max="8"
+                android:progressDrawable="@drawable/blue_slider_progress"
+                android:thumb="@drawable/blue_slider_control"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/heatertextid"
+                android:layout_toStartOf="@+id/heatertextid" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageDelay"
+                android:background="@drawable/profisonic_delay"
+                android:layout_gravity="center_vertical" />
+
+            <com.mpvmedical.sonodrop.CustomEditText
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:nextFocusDown="@+id/delayMinut"
+                android:imeOptions="actionDone"
+                android:inputType="time"
+                android:cursorVisible="false"
+                android:layout_width="50dp"
+                android:layout_marginLeft="70dp"
+                android:minHeight="50dp"
+                android:maxHeight="50dp"
+                android:id="@+id/delayHour"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center"
+                android:text=":"/>
+
+            <com.mpvmedical.sonodrop.CustomEditText
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:inputType="time"
+                android:layout_width="50dp"
+                android:cursorVisible="false"
+                android:imeOptions="actionDone"
+                android:minHeight="50dp"
+                android:maxHeight="50dp"
+                android:id="@+id/delayMinut"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ToggleButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/pauseBtn"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:textOff=""
+            android:textOn=""
+            android:onClick="pauseBtnOnClick"
+            android:background="@drawable/togglepause"
+            android:layout_marginTop="20dp" />
+
+        <ToggleButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/stopBtn"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:textOff=""
+            android:textOn=""
+            android:onClick="stopBtnOnClick"
+            android:background="@drawable/togglestop"
+            android:checked="false"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp" />
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_columnSpan="2"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_columnSpan="2"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageView"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="@drawable/profisonic_normal"
+            android:layout_columnSpan="2" />
+
+    </GridLayout>
+
+</RelativeLayout>
